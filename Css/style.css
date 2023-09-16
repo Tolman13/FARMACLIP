@@ -98,15 +98,124 @@ h2
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-  
-  .contenido {
+  .contenido{
     border: 1px solid #ccc;
     padding: 20px;
     display: inline-flex;
 }
-.contenido p
-{
+.contenido p{
     margin-left: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.5;
+}
+.contacto
+{ display: flex;
+  gap: 24px;
+}
+.contacto div
+{
+  width: 100%;   
+}
+.datos p
+{
+    font-size: 14px;
+}
+.datos ul li
+{
+    font-size: 13px;
+}
+.datos
+{
+    position: relative;
+    margin-left: 500px;
+    bottom: 610px;
+    line-height: 1.5;
+    
+}
+.formulario p {
+ display:grid;
+ width: 200px;
+ align-items: center;
+ 
+}
+.formulario p label {
+    min-width: 80px;
+    
+}
+.formulario p label
+{
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+    
+}
+.formulario input
+{
+    background-color: rgb(219, 216, 216);
+    
+}
+.formulario textarea {
+    resize: none;
+    height: 150px;
+    width: 400px;
+    background-color: rgb(219, 216, 216);
+   
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover {
+    background-color: #2e64a1;
+}
+.formulario h2
+{
+    text-align: start;
+}
+.formulario
+{
+    border-radius: 1px;
+    border: solid;
+    padding: 8px;
+}
+.servicio
+{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.servicio .info
+{
+    color: #2e64a1;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 10px;
+}
+.servicio .info p
+{
+    font-size: 13px;
+}
+.servicio:nth-child(even)
+{
+    flex-direction: row-reverse;
+}
+.servicio img {
+    width: 200px; 
 }
